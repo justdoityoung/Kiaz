@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unench_hereglegchid</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <style>
+.grid_container_unench {
+    width: 100%;
+    display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+}
+
+.grid-items{
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+}
+.grid-items h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #343f52;
+}
+
+.grid-items p {
+    margin-top: 20px;
+    color: #60697b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+            .grid_container_unench {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .grid_container_unench {
+                grid-template-columns: 1fr; /* One column for even smaller screens */
+            }
+        }
+        #p{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html"><img src="./img//cu_logo.png" alt="cu_logo" class="img"></a>
+        <div class="menu">
+            <a href="./index.html">Нүүр хуудас</a>
+            <a href="./about.html">Бидний тухай</a>
+            <a href="./sanal_bolgoh_hool.html">Санал болгож буй хоолнууд</a>
+            <a href="./unench_hereglegchid.html">Үнэнч хэрэглэгчид</a>
+            <a href="./salbar.html">Салбар</a>
+        </div>
+    </div>
+    <div class="main_menu">
+        <a href="./index.html">Нүүр хуудас</a>
+        <a href="./about.html">Бидний тухай</a>
+        <a href="./unench_hereglegchid.html">Үнэнч хэрэглэгч</a>
+    </div>
+    <div class="banner_about">
+        <img src="./img/unench.jpeg" alt="banner" class="banner_about">
+    </div>
+    <div style="width:100%; padding: 0% 5% 0% 5%;">
+    <div class="grid_container_unench">
+        <div class="grid-items"><img src="./img/unench_1.gif" style="float: right;"></div>
+        <div class="grid-items">  
+            <h1>Үнэнч хэрэглэгчийн урамшуулал</h1>
+            <p>Хэрэглэгч та CU-ээс үйлчилгээ авах бүрдээ урамшууллын оноо цуглуулах, оноогоор худалдан авалт хийх, давтан худалдан авалтын шагнал ,зөвхөн танд зориулсан хөнгөлөлт урамшууллуудыг аваарай.</p></div>
+            <div class="grid-items"><h1 >Цахим төлбөрийн хэрэгслүүд</h1>
+            <p>CU-ийн үнэнч хэрэглэгчдэд зориулсан бүх төрлийн үйлчилгээнүүдийг авахдаа бүх төрлийн банкны карт холбох эсвэл бүх төрлийн онлайн төлбөрийн хэрэгслүүдийг ашиглан төлбөрөө төлөх боломжтой.</p>
+            </div>
+            <div class="grid-items"><img src="./img/unench_2.gif" alt=""  style="float: left;"></div>
+    </div>
+</div>
+</body>
+</html>

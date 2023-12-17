@@ -1,0 +1,237 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      gap: 10px;
+      padding: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+    }
+
+    .grid-item {
+      background-color: white;
+      color: #343f52;
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    }
+    .imgee{
+        width: 100%;
+        height: 150px;
+    }
+    .grid-item p{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px  20px  20px  20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+  height: 53px;
+}
+.inp .border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 18px;
+  fill: none;
+}
+.inp .border path {
+  stroke: #c8ccd4;
+  stroke-width: 2;
+}
+.inp .border path d {
+  transition: all 0.2s ease;
+}
+.inp .check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: none;
+  transform: translate(0, 9px) scale(0);
+  transition: all 0.3s cubic-bezier(0.5, 0.9, 0.25, 1.3);
+  transition-delay: 0.15s;
+}
+.inp .check path {
+  stroke: #07f;
+  stroke-width: 2;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:focus {
+  outline: none;
+}
+.inp input:focus + .border path {
+  stroke: #07f;
+}
+.inp input:valid + .border path {
+  animation: elasticInput 0.8s ease forwards;
+}
+.inp input:valid + .border + .check {
+  transform: translate(0, 0) scale(1);
+}
+::placeholder {
+  color: #9098a9;
+}
+@-moz-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@-webkit-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@-o-keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+@keyframes elasticInput {
+  33% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,1 253,1 C261,1 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+  66% {
+    d: path("M0,12 L226,12 C220,12 220.666667,12 228,12 C239,12 245,17 253,17 C261,17 268,12 278,12 C284.666667,12 285.333333,12 280,12");
+  }
+}
+
+  </style>
+</head>
+<body>
+     <div class="header">
+        <a href="./index.html"><img src="./img//cu_logo.png" alt="cu_logo" class="img"></a>
+        <div class="menu">
+            <a href="./index.html">Нүүр хуудас</a>
+            <a href="./about.html">Бидний тухай</a>
+            <a href="./sanal_bolgoh_hool.html">Санал болгож буй хоолнууд</a>
+            <a href="./unench_hereglegchid.html">Үнэнч хэрэглэгчид</a>
+            <a href="./salbar.html">Салбар</a>
+        </div>
+    </div>
+  <div class="grid-container">
+    <h1>Дэлгүүрийн ажилтны анкет</h1>
+    <p>Та дараах асуултуудыг анхааралтай уншаад, бүх асуултанд хариулна уу. Овог, нэр, РД, гэрийн хаяг, утасны дугаараа заавал оруулна уу. Монгол кирилл үсгээрээ бичээрэй.</p>
+    <h3 style="margin-top: 20px;">Санамж</h3>
+    <p style="margin:0;">
+        Та 2 болон түүнээс дээш удаа анкет бөглөхдөө регистрийн дугаараа оруулахад таны бусад мэдээлэл автоматаар бөглөгдөх болно.</p>
+    <div>
+
+    </div>
+    <h5>Та ажиллах боломжтой цагаа сонгоно уу.</h5>
+    <div style="display: flex; flex-direction: row;">
+        <input type="radio"> <p style="margin-left: 10px;">Full-timer: Үндсэн ажилтан /​7 хоногт тогтмол 40 цаг ажиллах+Ээлжийн амралт болон бусад/​</p>
+       
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <input type="radio"><p style="margin-left: 10px;">Part-timer: Цагийн ажилтан /​7хоногт 20-40 хүртэл цаг ажиллах/​</p>
+    </div>
+    <br><br>
+    <h5>Та ажиллах боломжтой байршилаа сонгоно уу.</h5>
+    <div style="display: grid; grid-template-columns: auto auto; row-gap: 50px;">
+        <div style="width: 100%">
+            <h4>Дүүрэг /​ Аймаг</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+        <div style="width: 100%">
+            <h4>Хороо /​ Сум</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+        <div style="width: 100%">
+            <h4>Байршил</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+        <div style="width: 100%">
+            <h4>Дэлгүүр</h4>
+            <select name="" id="" style="border: none; width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+    </div>
+    <h5 style="margin-top: 30px;">Регистрийн дугаар /​Кирилл үсгээр бичнэ үү/​</h5>
+    <input type="text" style="width: 400px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+    <div style="display: grid; grid-template-columns: auto auto; row-gap: 50px; margin-top: 30px;">
+        <div style="width: 100%">
+            <h4>Таны овог</h4>
+            <label for="inp" class="inp">
+                <input type="password" id="inp" placeholder="Password" pattern=".{6,}" required>
+                <svg width="280px" height="18px" viewBox="0 0 280 18" class="border">
+                  <path d="M0,12 L223.166144,12 C217.241379,12 217.899687,12 225.141066,12 C236.003135,12 241.9279,12 249.827586,12 C257.727273,12 264.639498,12 274.514107,12 C281.097179,12 281.755486,12 276.489028,12"></path>
+                </svg>
+                <svg width="14px" height="12px" viewBox="0 0 14 12" class="check">
+                  <path d="M1 7 5.5 11 L13 1"></path>
+                </svg>
+              </label>
+              </form>
+        </div>
+        <div style="width: 100%">
+            <h4>Таны нэр</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+        <div style="width: 100%">
+            <h4>Төрсөн он сар өдөр</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+        <div style="width: 100%">
+            <h4>Дэлгүүр</h4>
+            <select name="" id="" style="width: 200px; height: 30px; margin-top: 10px; background-color: #f0f0f0;">
+                <option value=""></option>
+              </select>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html> -->
